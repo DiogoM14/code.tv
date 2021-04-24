@@ -1,5 +1,17 @@
+import Head from 'next/head'
+import { Spotlight } from '../components/Spotlight'
+import { Container } from './homeStyles'
+
 export default function Home() {
   return (
-    <h1>Teste</h1>
+    <>
+      <Head>
+        <title>Home | Code.TV</title>
+      </Head>
+
+      <Container>
+        <Spotlight />
+      </Container>
+    </>
   )
 }

@@ -3,12 +3,13 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
   :root {
     --background: #121214;
+    --highlight: #fe3a7d;
 
-    --gray.500: #29292e;
-    --gray.600: #202024;
+    --gray-500: #29292e;
+    --gray-600: #202024;
 
     --title: #ffffff;
-    --text: #898c93;
+    --text: #a8a8b2;
   }
 
   * {
@@ -39,6 +40,11 @@ export const GlobalStyle = createGlobalStyle`
   h1, h2, h3, h4, h5, h5, strong {
     font-weight: 600;
     color: var(--title);
+    font-family: 'Roboto', sans-serif;
+  }
+
+  padding, span {
+    font-family: 'Roboto', sans-serif;
   }
 
   button { 
