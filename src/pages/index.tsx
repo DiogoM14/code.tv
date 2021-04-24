@@ -10,6 +10,9 @@ export default function Home() {
       </Head>
 
       <Container>
+        <h4>Learn more everyday</h4>
+        <h4>with Code<span>.</span>tv</h4>
+
         <Spotlight />
       </Container>
     </>
