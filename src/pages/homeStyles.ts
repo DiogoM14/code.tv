@@ -8,7 +8,7 @@ export const Container = styled.div`
 
   h4 {
     text-align: right;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
     font-size: 2.3rem;
     line-height: 1.5rem;
   }
