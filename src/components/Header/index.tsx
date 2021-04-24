@@ -15,9 +15,9 @@ export function Header() {
         </LeftSide>
         
         <RightSide>
-          <FiSearch color="#a8a8b2" size={24} />
-          <FiBookmark fill="#a8a8b2" color="#a8a8b2" size={24} />
-          <FiBell fill="#a8a8b2" color="#a8a8b2" size={24} />
+          <FiSearch color="#a8a8b2" size="1.5rem" />
+          <FiBookmark fill="#a8a8b2" color="#a8a8b2" size="1.5rem" />
+          <FiBell fill="#a8a8b2" color="#a8a8b2" size="1.5rem" />
 
           <Avatar src="https://github.com/diogom14.png" />
         </RightSide>

@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import { Header } from '../components/Header'
+import { Spotlight } from '../components/Spotlight'
+import { Container } from './homeStyles'
 
 export default function Home() {
   return (
@@ -8,7 +9,9 @@ export default function Home() {
         <title>Home | Code.TV</title>
       </Head>
 
-      <Header />
+      <Container>
+        <Spotlight />
+      </Container>
     </>
   )
 }

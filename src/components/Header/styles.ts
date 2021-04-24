@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   position: fixed;
+  top: 0;
   width: 100%;
   background: var(--gray-600);
   box-shadow: rgb(18 18 20) 0px 1rem 2rem;
@@ -23,7 +24,7 @@ export const LeftSide = styled.div`
   align-items: center;
 
   h1 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   span {
