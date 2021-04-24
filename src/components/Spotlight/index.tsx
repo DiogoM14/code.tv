@@ -20,26 +20,46 @@ export function Spotlight() {
       <div ref={ref} className="keen-slider">
         <div className="keen-slider__slide number-slide1">
           <div className="slider__right-side">
-            <h1>ola</h1>
+            <h1>React Native Course</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus natus sed, voluptas quis illo eos officiis totam ipsum tempore impedit consectetur culpa facilis error dolorem minima. Ipsam id alias tempore.</p>
+            <div className="reviews">
+              ⭐⭐⭐⭐⭐
+              6 Reviews
+            </div>
+            <h2>$ 49</h2>
+            <button>Learn more</button>
           </div>
           <img src="/example.png" />
         </div>
         <div className="keen-slider__slide number-slide2">
           <div className="slider__right-side">
-            <h1>ola</h1>
+          <h1>React Native Course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus natus sed, voluptas quis illo eos officiis totam ipsum tempore impedit consectetur culpa facilis error dolorem minima. Ipsam id alias tempore.</p>
+            <div className="reviews">
+              ⭐⭐⭐⭐⭐
+              6 Reviews
+            </div>
+            <h2>$ 49</h2>
+            <button>Learn more</button>
           </div>
           <img src="/example.png" />
         </div>
         <div className="keen-slider__slide number-slide3">
           <div className="slider__right-side">
-            <h1>ola</h1>
+          <h1>React Native Course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus natus sed, voluptas quis illo eos officiis totam ipsum tempore impedit consectetur culpa facilis error dolorem minima. Ipsam id alias tempore.</p>
+            <div className="reviews">
+              ⭐⭐⭐⭐⭐
+              6 Reviews
+            </div>
+            <div className="promo">
+              <h2>$49</h2>
+              <h3>$150</h3>
+            </div>
+            <button>Learn more</button>
           </div>
           <img src="/example.png" />
         </div>
-        <div className="keen-slider__slide number-slide4">4</div>
-        <div className="keen-slider__slide number-slide5">5</div>
-        <div className="keen-slider__slide number-slide6">6</div>
       </div>
     </Container>
   )

@@ -10,7 +10,7 @@ export const Container = styled.div`
     background: var(--gray-600);
     max-height: 370px;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: grab;
 
     & .slider__right-side {
       position: absolute;
@@ -31,6 +31,35 @@ export const Container = styled.div`
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         line-height: 150%;
+        margin: 1.5rem 0;
+      }
+
+      .reviews {
+        color: var(--text); 
+      }
+
+      .promo {
+        display: flex;
+        align-items: center;
+
+        h2 {
+          padding: 1.5rem 0;
+        }
+
+        h3 {
+          text-decoration: line-through;
+          margin-left: 1rem;
+          color: var(--text);
+        }
+      }
+
+      button {
+        background: #fe3a7d;
+        border: 0;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
       }
     }
 
