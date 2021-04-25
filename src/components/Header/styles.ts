@@ -9,12 +9,12 @@ export const Wrapper = styled.div`
 `
 
 export const Container = styled.header`
-  max-width: 2000px;
+  max-width: 1700px;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   margin: 0 auto;
 
-  height: 4rem;
+  height: 4.5rem;
   padding: 2rem;
   align-items: center;
 `
@@ -45,7 +45,7 @@ export const Divider = styled.div`
 export const SearchBar = styled.input`
   width: 30%;
   background: var(--background);
-  height: 2.2rem;
+  height: 2.7rem;
   border: 0;
   border-radius: 5px;
   padding: 0 1rem;

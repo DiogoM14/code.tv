@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Spotlight } from '../components/Spotlight'
+import { StartHere } from '../components/StartHere'
 import { Container } from './homeStyles'
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <h4>with Code<span>.</span>tv</h4>
 
         <Spotlight />
+        <StartHere />
       </Container>
     </>
   )

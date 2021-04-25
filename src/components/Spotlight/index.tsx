@@ -1,7 +1,8 @@
-import { Container } from "./styles"
+import { Container, Title } from "./styles"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import { Carousel } from "./Carousel"
+import { Divider } from '../Divider'
 
 export function Spotlight() {
   const [ref] = useKeenSlider<HTMLDivElement>({ 
@@ -17,7 +18,7 @@ export function Spotlight() {
 
   return (
     <Container>
-      <h1>Spotlight</h1>
+      <Divider title="Spotlight" />
 
       <div ref={ref} className="keen-slider">
         <Carousel 

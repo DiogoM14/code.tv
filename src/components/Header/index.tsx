@@ -14,10 +14,10 @@ export function Header() {
           <h1>Code<span>.</span>tv</h1>
         </LeftSide>
 
-        <SearchBar type="text" />
+        {/* <SearchBar type="text" /> */}
         
         <RightSide>
-          {/* <FiSearch color="#a8a8b2" size="1.5rem" /> */}
+          <FiSearch color="#a8a8b2" size="1.5rem" />
           <FiBookmark fill="#a8a8b2" color="#a8a8b2" size="1.5rem" cursor="pointer" />
           <FiBell fill="#a8a8b2" color="#a8a8b2" size="1.5rem" cursor="pointer" />
 
