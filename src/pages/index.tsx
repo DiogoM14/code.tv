@@ -11,6 +11,7 @@ export default function Home() {
       </Head>
 
       <Container>
+        {/* <img src="/logo-invert.svg" alt=""/> */}
         <h4>Learn more everyday</h4>
         <h4>with Code<span>.</span>tv</h4>
 
