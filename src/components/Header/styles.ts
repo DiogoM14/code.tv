@@ -26,14 +26,15 @@ export const Search = styled.input`
 export const UserAndNotifications = styled.div`
   display: inline-flex;
   align-items: center;
+  margin-left: 2.5rem;
 
   div {
     display: inline-flex;
     align-items: center;
 
     img {
-      width: 32px;
-      height: 32px;
+      width: 38px;
+      height: 38px;
       border-radius: 100%;
     }
 

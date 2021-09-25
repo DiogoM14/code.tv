@@ -11,6 +11,7 @@ export function Menu() {
         <Category />
         <Category />
         <Category />
+        <Category />
       </Categories>
     </Container>
   )
