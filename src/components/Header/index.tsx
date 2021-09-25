@@ -1,6 +1,7 @@
 import { IoMdNotifications } from 'react-icons/io'
 import { FiChevronDown } from 'react-icons/fi'
-import { Container, Search, Title, UserAndNotifications } from "./styles";
+
+import { Container, Search, UserAndNotifications } from "./styles";
 
 export function Header() {
   return (
