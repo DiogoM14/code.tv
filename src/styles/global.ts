@@ -2,14 +2,15 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   :root {
-    --background: #121214;
-    --highlight: #fe3a7d;
+    --background: #1F1D2B;
+    --highlight: #FF7551;
 
     --gray-500: #29292e;
     --gray-600: #202024;
 
     --title: #ffffff;
     --text: #a8a8b2;
+    --text-disable: #808191;
   }
 
   * {
@@ -40,11 +41,11 @@ export const GlobalStyle = createGlobalStyle`
   h1, h2, h3, h4, h5, h5, strong {
     font-weight: 600;
     color: var(--title);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   padding, span {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   button { 

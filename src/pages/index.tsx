@@ -1,7 +1,4 @@
 import Head from 'next/head'
-import { Spotlight } from '../components/Spotlight'
-import { StartHere } from '../components/StartHere'
-import { Container } from './homeStyles'
 
 export default function Home() {
   return (
@@ -10,14 +7,7 @@ export default function Home() {
         <title>Home | Code.TV</title>
       </Head>
 
-      <Container>
-        {/* <img src="/logo-invert.svg" alt=""/> */}
-        <h4>Learn more everyday</h4>
-        <h4>with Code<span>.</span>tv</h4>
-
-        <Spotlight />
-        <StartHere />
-      </Container>
+      <h1>Olá</h1>
     </>
   )
 }
