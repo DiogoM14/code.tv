@@ -1,4 +1,7 @@
+import { categories } from "../../../utils/categories";
+
 import { Category } from "./Category";
+
 import { Categories, Container, Title } from "./styles";
 
 export function Menu() {
@@ -7,11 +10,13 @@ export function Menu() {
       <Title>MENU</Title>
 
       <Categories>
-        <Category />
-        <Category />
-        <Category />
-        <Category />
-        <Category />
+        {categories.map(category => (
+          <Category 
+            key={category.id} 
+            title={category.title} 
+            icon={category.icon} 
+          />
+        ))}
       </Categories>
     </Container>
   )

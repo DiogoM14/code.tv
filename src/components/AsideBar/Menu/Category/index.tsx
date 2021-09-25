@@ -1,22 +1,28 @@
 import { useState } from 'react';
-import { IoMdHome } from 'react-icons/io'
 
 import { Container, IconWrapper } from "./styles";
 
-export function Category() {
+type Props = {
+  title: string
+  icon: string
+}
+
+export function Category({ title, icon }: Props) {
   const [ isActive, setIsActive ] = useState(false)
 
   function handleIsActive() {
     setIsActive(!isActive)
   }
 
+  console.log('sdf')
+
   return (
     <Container onClick={handleIsActive} isActive={isActive}>
       <IconWrapper isActive={isActive}>
-        <img src="home.svg" alt="Home" />
+        <img src={icon} alt={title} />
       </IconWrapper>
 
-      <h2>Discover</h2>
+      <h2>{title}</h2>
       
     </Container>
   )
