@@ -21,9 +21,6 @@ export function MainContent() {
         <VideoCard />
         <VideoCard />
         <VideoCard />
-      </MostWatched>
-
-      <MostWatched>
         <VideoCard />
         <VideoCard />
         <VideoCard />

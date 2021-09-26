@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { slide as Menu } from 'react-burger-menu'
 
 import { AsideBar } from '../components/AsideBar'
 import { Header } from '../components/Header'
@@ -15,6 +16,7 @@ export default function Home() {
 
       <Container>
         <AsideBar />
+
         <Header />
 
         <MainContent />

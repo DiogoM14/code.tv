@@ -17,6 +17,10 @@ export const Container = styled.div`
 `;
 
 export const HighLights = styled.div`
+  @media (max-width: 1000px) {
+
+  }
+
   display: grid;
   gap: 1.5rem;
   margin-top: 1.25rem;
@@ -28,6 +32,18 @@ export const HighLights = styled.div`
 `
 
 export const MostWatched = styled.div`
+  @media (max-width: 1250px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
+
   display: grid;
   gap: 1.25rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;

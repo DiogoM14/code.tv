@@ -1,6 +1,16 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  @media (max-width: 1080px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    grid-template-areas:
+      'HD'
+      'MC'
+      'MC';
+  }
+
   width: 100%;
   max-width: 1408px;
   margin: 0 auto;
