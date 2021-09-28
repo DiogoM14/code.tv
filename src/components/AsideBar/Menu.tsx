@@ -16,7 +16,7 @@ export function Menu() {
       <Heading 
         size="xs" 
         color="#808191"
-        mb={12}
+        mb={8}
       >
         MENU
       </Heading>
