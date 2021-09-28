@@ -10,9 +10,10 @@ export function Profile() {
       maxW="280px"
       justify="space-between"
       align="center"
+      ml="6"
     >
       <HStack>
-        <Menu placement="bottom">
+        <Menu placement="bottom" closeOnBlur={true}>
           <Avatar 
             name="Diogo Martins"  
             src="https://github.com/diogom14.png"
@@ -20,16 +21,19 @@ export function Profile() {
 
           <Text>Diogo Martins</Text>
 
-          <MenuButton colorScheme="pink">
+          <MenuButton>
             <FiChevronDown color="#fff" size="20" />
           </MenuButton>
-          <MenuList bgColor="#353340">
-            <MenuGroup title="Profile">
+          <MenuList 
+            bgColor="#353340"
+            border="none"
+          >
+            <MenuGroup color="#808191" title="Profile">
               <MenuItem _hover={{ bg: "#808191" }}>My Account</MenuItem>
               <MenuItem _hover={{ bg: "#808191" }}>Payments </MenuItem>
             </MenuGroup>
             <MenuDivider />
-            <MenuGroup title="Help">
+            <MenuGroup color="#808191" title="Help">
               <MenuItem _hover={{ bg: "#808191" }}>Docs</MenuItem>
               <MenuItem _hover={{ bg: "#808191" }}>FAQ</MenuItem>
             </MenuGroup>
@@ -41,7 +45,6 @@ export function Profile() {
         color="#808191" 
         w={6} 
         h={6} 
-        badge
       />
     </Flex>
   )

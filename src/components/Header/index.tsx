@@ -5,7 +5,7 @@ import { SearchInput } from "./SearchInput";
 
 export function Header() {
   return (
-    <Flex justify="space-between">
+    <Flex justify="space-between" align="center">
       <SearchInput />
       <Profile />
     </Flex>

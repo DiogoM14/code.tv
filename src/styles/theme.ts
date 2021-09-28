@@ -8,7 +8,7 @@ export const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: '#252836',
+        bg: '#1f1d2b',
         color: '#fff' 
       }
     }
