@@ -1,13 +1,16 @@
-import { Flex } from "@chakra-ui/react";
+import { HStack } from "@chakra-ui/react";
 import { Profile } from "./Profile";
 import { SearchInput } from "./SearchInput";
 
 
 export function Header() {
   return (
-    <Flex justify="space-between" align="center">
+    <HStack 
+      w="full"
+      spacing={4}
+    >
       <SearchInput />
       <Profile />
-    </Flex>
+    </HStack>
   )
 }

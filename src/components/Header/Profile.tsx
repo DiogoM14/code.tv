@@ -1,26 +1,23 @@
-import { Flex, Avatar, HStack, Text, Menu, MenuButton, MenuList, MenuGroup, MenuItem, MenuDivider, Badge } from "@chakra-ui/react";
+import { Avatar, HStack, Text, Menu, MenuButton, MenuList, MenuGroup, MenuItem, MenuDivider } from "@chakra-ui/react";
+
 import { BellIcon } from '@chakra-ui/icons'
 import { FiChevronDown } from 'react-icons/fi'
 
-
 export function Profile() {
   return (
-    <Flex
-      w="100%"
+    <HStack
+      w="full"
       maxW="280px"
-      justify="space-between"
-      align="center"
-      ml="6"
     >
-      <HStack>
+      <HStack spacing={3}>
+        <Avatar 
+          name="Diogo Martins"  
+          src="https://github.com/diogom14.png"  
+        />
+
+        <Text>Diogo Martins</Text>
+
         <Menu placement="bottom" closeOnBlur={true}>
-          <Avatar 
-            name="Diogo Martins"  
-            src="https://github.com/diogom14.png"
-          />
-
-          <Text>Diogo Martins</Text>
-
           <MenuButton>
             <FiChevronDown color="#fff" size="20" />
           </MenuButton>
@@ -46,6 +43,7 @@ export function Profile() {
         w={6} 
         h={6} 
       />
-    </Flex>
+      
+    </HStack>
   )
 }

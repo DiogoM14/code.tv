@@ -1,4 +1,4 @@
-import { Center, Text, Flex } from '@chakra-ui/react'
+import { Center, Text, HStack } from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
 
 interface Props {
@@ -14,9 +14,8 @@ export function Category({ title, icon }: Props) {
   }
 
   return (
-    <Flex
-      align="center"
-      mb={8}
+    <HStack
+      spacing={4}
       cursor="pointer"
       onClick={handleIsSelected}
     >
@@ -28,13 +27,13 @@ export function Category({ title, icon }: Props) {
       >
         <img src={icon} alt={title} />
       </Center>
+
       <Text
-        ml={4}
         fontWeight={isSelected ? "bold" : "regular"}
         color={isSelected ? "#fff" : "#808191"}
       >
         {title}
       </ Text>
-    </ Flex>
+    </ HStack>
   )
 }
