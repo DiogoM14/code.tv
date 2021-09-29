@@ -15,18 +15,15 @@ export function Menu() {
       borderBottom="1px"
       borderColor="#34373C"
     >
-      <VStack spacing={6} align="flex-start">
-        <Heading size="xs" color="#808191">MENU</Heading>
+      <Heading size="xs" color="#808191" mb={-2} fontWeight="semibold">MENU</Heading>
 
-        {categories.map(category => (
-          <Category 
-            key={category.id}
-            title={category.title}
-            icon={category.icon}
-          />
-        ))}
-      </VStack>
-
+      {categories.map(category => (
+        <Category 
+          key={category.id}
+          title={category.title}
+          icon={category.icon}
+        />
+      ))}
     </VStack>
   )
 }

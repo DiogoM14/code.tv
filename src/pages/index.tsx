@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Grid, GridItem, Container } from '@chakra-ui/react'
 import { Header } from '../components/Header'
 import { AsideBar } from '../components/AsideBar'
-import { MainContent } from '../components/MainContent'
+import { Discover } from '../components/Screens/Discover'
 
 export default function Home() {
   return (
@@ -12,8 +12,9 @@ export default function Home() {
       </Head>
 
       <Container 
-        maxW="container.xl" 
-        p={8}
+        maxW="1440px" 
+        px={8}
+        py={7}
       >
         <Grid 
           w="100%"
@@ -25,7 +26,7 @@ export default function Home() {
           </GridItem>
 
           <Header  />
-          <MainContent />
+          <Discover />
         </Grid>
       </Container>
     </>

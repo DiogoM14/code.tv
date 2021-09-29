@@ -13,6 +13,7 @@ export function SearchInput() {
         w="100%"
         maxW="625px"
         border="none"
+        mr={4}
       />
     </ InputGroup>
   )

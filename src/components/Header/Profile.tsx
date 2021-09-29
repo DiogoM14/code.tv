@@ -8,6 +8,7 @@ export function Profile() {
     <HStack
       w="full"
       maxW="280px"
+      spacing={12}
     >
       <HStack spacing={3}>
         <Avatar 
