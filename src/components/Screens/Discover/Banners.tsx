@@ -1,4 +1,6 @@
-import { VStack, Heading, SimpleGrid, GridItem, Box } from "@chakra-ui/react";
+import { VStack, Heading, SimpleGrid, GridItem, Box, Text, HStack } from "@chakra-ui/react";
+import { CheckIcon } from '@chakra-ui/icons'
+import { VerifiedAvatar } from "../../VerifiedAvatar";
 
 export function Banners() {
   return (
@@ -11,10 +13,72 @@ export function Banners() {
 
       <SimpleGrid w="100%" columns={3} columnGap={5}>
         <GridItem colSpan={2}>
-          <Box borderRadius="18px" w="100%" h="366px" backgroundColor="#30acbd" />
+          <Box 
+            borderRadius="18px" 
+            w="100%" 
+            h="366px" 
+            backgroundColor="#30acbd" 
+            p={10}
+            pos="relative"
+          >
+            <Heading 
+              maxW="240px" 
+              w="100%"
+              fontWeight="semibold"
+              fontSize="3xl"
+            >
+              Complete ReactJS w/ NextJS course 2021 Updated.
+            </Heading>
+
+            <HStack mt={8} spacing={3}>
+              <Box
+                p={1}
+                borderRadius="100%"
+                borderWidth="1px"
+              >
+                <VerifiedAvatar />
+              </Box>
+
+              <VStack align="flex-start" spacing={0.5}>
+                <Text fontWeight="medium" fontSize="sm">Diogo Martins</Text>
+                <Text fontSize="xs">53K views  •  2 weeks ago</Text>
+              </VStack>
+            </HStack>
+          </ Box>
         </GridItem>
         <GridItem colSpan={1}>
-          <Box borderRadius="18px" w="100%" h="366px" backgroundColor="#cb7e55" />
+        <Box 
+            borderRadius="18px" 
+            w="100%" 
+            h="366px" 
+            backgroundColor="#cb7e55" 
+            p={10}
+            pos="relative"
+          >
+            <Heading 
+              maxW="240px" 
+              w="100%"
+              fontWeight="semibold"
+              fontSize="3xl"
+            >
+              Firsts steps with CSS Display Grid.
+            </Heading>
+
+            <VStack mt={4} spacing={3} align="flex-start">
+              <VStack align="flex-start" spacing={0.5}>
+                <Text fontWeight="medium" fontSize="sm">Diogo Martins</Text>
+                <Text fontSize="xs">53K views  •  2 weeks ago</Text>
+              </VStack>
+
+              <Box
+                p={1}
+                borderRadius="100%"
+                borderWidth="1px"
+              >
+                <VerifiedAvatar />
+              </Box>
+            </VStack>
+          </ Box>
         </GridItem>
       </SimpleGrid>
     </VStack>

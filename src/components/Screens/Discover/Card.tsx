@@ -1,5 +1,5 @@
 import { VStack, HStack, Box, Image, Text, Avatar, AvatarBadge } from "@chakra-ui/react";
-import { CheckIcon } from '@chakra-ui/icons'
+import { VerifiedAvatar } from "../../VerifiedAvatar";
 
 export function Card() {
   return (
@@ -24,6 +24,7 @@ export function Card() {
               <Text
                 fontSize="sm"
                 color="#B7B9D2"
+                noOfLines={1}
               >
                 Diogo Martins
               </Text>
@@ -33,6 +34,7 @@ export function Card() {
             <Text
               fontWeight="medium"
               mb={4}
+              noOfLines={2}
             >
               ReactJS with ChakraUI course
             </Text>
@@ -53,14 +55,7 @@ export function Card() {
               borderRadius="100%"
               borderWidth="1px"
             >
-              <Avatar 
-                name="Diogo Martins"  
-                src="https://github.com/diogom14.png"  
-              >
-                <AvatarBadge borderColor="#242730" borderWidth="2px" bg="blue.300" boxSize="0.9em">
-                  <CheckIcon w="7px" h="7px" mt="2px" />
-                </ AvatarBadge>
-              </Avatar>
+              <VerifiedAvatar />
             </Box>
           </Box>
         </Box>
