@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Grid, GridItem, Container } from '@chakra-ui/react'
+
 import { Header } from '../components/Header'
 import { AsideBar } from '../components/AsideBar'
 import { Discover } from '../components/Screens/Discover'
@@ -18,15 +19,18 @@ export default function Home() {
       >
         <Grid 
           w="100%"
-          templateColumns="260px auto"
+          templateColumns={["80px auto", "80px auto", "80px auto", "260px auto"]}
           templateRows="48px auto"
         >
-          <GridItem rowSpan={2}>
+          <GridItem rowSpan={[1, 1, 1, 2]} colSpan={[1, 1, 1, 1]}>
             <AsideBar  />
           </GridItem>
-
-          <Header  />
-          <Discover />
+          <GridItem>
+            <Header  />
+          </GridItem>
+          <GridItem colSpan={[2, 2, 2, 1]}>
+            <Discover />
+          </GridItem>
         </Grid>
       </Container>
     </>

@@ -10,7 +10,7 @@ export function MostWatched() {
     >
       <Heading fontWeight="medium" fontSize="2xl">Most Watched</Heading>
 
-      <SimpleGrid columns={4} columnGap={5} w="100%">
+      <SimpleGrid columns={[ 1, 2, 3, 4]} gap={5} w="100%">
         <Card />
         <Card />
         <Card />

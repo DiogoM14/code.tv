@@ -1,9 +1,17 @@
-import { Avatar, HStack, Text, Menu, MenuButton, MenuList, MenuGroup, MenuItem, MenuDivider } from "@chakra-ui/react";
+import { Avatar, HStack, Text, Menu, MenuButton, MenuList, MenuGroup, MenuItem, MenuDivider, useBreakpointValue } from "@chakra-ui/react";
 
 import { BellIcon } from '@chakra-ui/icons'
 import { FiChevronDown } from 'react-icons/fi'
 
 export function Profile() {
+  const isName = useBreakpointValue({
+    base: true,
+    xl: false,
+    lg: false,
+    md: false,
+    sm: false,
+  })
+
   return (
     <HStack
       w="full"
@@ -16,7 +24,7 @@ export function Profile() {
           src="https://github.com/diogom14.png"  
         />
 
-        <Text>Diogo Martins</Text>
+        {!isName && <Text>Diogo Martins</Text>}
 
         <Menu placement="bottom" closeOnBlur={true}>
           <MenuButton>

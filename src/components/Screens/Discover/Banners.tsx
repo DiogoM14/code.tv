@@ -1,5 +1,4 @@
 import { VStack, Heading, SimpleGrid, GridItem, Box, Text, HStack } from "@chakra-ui/react";
-import { CheckIcon } from '@chakra-ui/icons'
 import { VerifiedAvatar } from "../../VerifiedAvatar";
 
 export function Banners() {
@@ -11,8 +10,8 @@ export function Banners() {
     >
       <Heading fontSize="3xl" fontWeight="semibold">Discover</Heading>
 
-      <SimpleGrid w="100%" columns={3} columnGap={5}>
-        <GridItem colSpan={2}>
+      <SimpleGrid w="100%" columns={3} gap={5}>
+        <GridItem colSpan={[3, 3, 2, 2]}>
           <Box 
             borderRadius="18px" 
             w="100%" 
@@ -46,7 +45,7 @@ export function Banners() {
             </HStack>
           </ Box>
         </GridItem>
-        <GridItem colSpan={1}>
+        <GridItem colSpan={[3, 3, 1, 1]}>
         <Box 
             borderRadius="18px" 
             w="100%" 
